@@ -1,9 +1,32 @@
-create table personalidades(
+create table users(
     id serial primary key,
-    nome varchar,
-    historia varchar
+    username varchar not null,
+    first_name varchar  not null,
+    last_name varchar  not null,
+    email varchar  not null,
+    senha varchar  not null,
+    phone varchar  not null,
+    user_status integer
 );
 
-INSERT INTO personalidades(nome, historia) VALUES
-('Deodato Petit Wertheimer', 'Deodato Petit Wertheimer foi um médico e político brasileiro, seus primeiros anos de vida foram em São Paulo, mas logo mudou para Nova Friburgo no Estado do Rio de Janeiro e com 11 anos de idade ingressou no Colégio Anchieta dos jesuítas.'),
-('Carmela Dutra', 'Carmela Teles Leite Dutra foi a primeira-dama do Brasil, de 31 de janeiro de 1946 até a sua morte, tendo sido a esposa de Eurico Gaspar Dutra, 16.º Presidente do Brasil. Era, carinhosamente, chamada de Dona Santinha, pela sua forte religiosidade, fazendo seu marido abrir uma capelinha no Palácio Guanabara.');
+    
+
+INSERT INTO users(username,first_name,last_name,email,senha,phone,user_status) VALUES
+(
+    'pimentinha',
+    'Ivo',
+    'Pimenta',
+    'ivo@gmail.com',
+    '123456',
+    '85999863898',
+    '1'
+ ),
+ (
+    'Xolo',
+    'Miguel',
+    'Dias',
+    'xolo@gmail.com',
+    '245678',
+    '85999864598',
+    '1'
+ )
